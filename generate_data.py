@@ -7,7 +7,7 @@ DISTANCE = 3
 ROUNDS_LIST = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25]
 NOISE_LEVELS = [0.001, 0.002, 0.003, 0.005, 0.007, 0.01]
 SHOTS_PER_CONFIG = 100_000
-OUTPUT_DIR = "/scratch/project_465003017/aq1_decoder/data"
+OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "data")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
